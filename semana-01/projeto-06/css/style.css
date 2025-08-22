@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f7f9fc;
+  color: #222;
+}
+
+/* Cabeçalho */
+header {
+  background: #005fcc;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ffcc00;
+  outline: none;
+}
+
+/* Foco visível */
+a:focus, button:focus, input:focus {
+  outline: 3px solid #ff9800;
+  outline-offset: 3px;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Seções */
+section {
+  background: white;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.7rem;
+  background: #005fcc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #004099;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.section {
+  width: 100%; /* ocupa toda a largura */
+  height: auto; /* cresce com o conteúdo */
+  padding-top: 2rem; /* escalável com o font-size base */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* centraliza horizontal */
+  align-items: center; /* centraliza vertical */
+  gap: 1rem; /* espaço entre links escalável */
+}
+
+.section .back {
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.section a {
+  color: #005fcc;
+  margin-right: 10px;
+  text-decoration: none;
+}
