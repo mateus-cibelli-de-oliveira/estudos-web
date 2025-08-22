@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Unidades CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .box {
+        margin-bottom: 20px;
+        background-color: lightblue;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #333;
+      }
+
+      /* Tamanhos usando diferentes unidades */
+      .px-box {
+        width: 200px;
+        height: 100px;
+      }
+
+      .percent-box {
+        width: 50%; /* 50% do elemento pai (body) */
+        height: 50px;
+      }
+
+      .rem-box {
+        width: 10rem; /* 10 x 16px = 160px se font-size padrão */
+        height: 5rem;
+      }
+
+      .vw-box {
+        width: 20vw; /* 20% da largura da tela */
+        height: 10vw; /* 10% da largura da tela */
+      }
+
+      .vh-box {
+        width: 30vh; /* 30% da altura da tela */
+        height: 20vh; /* 20% da altura da tela */
+      }
+
+      .label {
+        font-weight: bold;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+      }
+
+      .section .back {
+        color: red;
+        text-decoration: none;
+      }
+
+      .section a {
+        color: blue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box px-box"><span class="label">200px x 100px</span></div>
+    <div class="box percent-box">
+      <span class="label">50% largura do pai</span>
+    </div>
+    <div class="box rem-box"><span class="label">10rem x 5rem</span></div>
+    <div class="box vw-box"><span class="label">20vw x 10vw</span></div>
+    <div class="box vh-box"><span class="label">30vh x 20vh</span></div>
+
+    <section class="section">
+      <a href="../projeto-01/" class="back">Voltar</a>
+      <a href="../projeto-03/">Ir para projeto-03</a>
+    </section>
+  </body>
+</html>

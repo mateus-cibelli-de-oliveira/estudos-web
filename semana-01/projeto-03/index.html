@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamento CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .container {
+        position: relative; /* necessário para posicionamento absoluto */
+        width: 300px;
+        height: 200px;
+        background-color: #ddd; /* cinza claro */
+        margin: 50px auto;
+        border: 2px solid #333;
+      }
+
+      .box {
+        position: absolute;
+        top: 20px; /* distância da borda superior */
+        right: 20px; /* distância da borda direita */
+        width: 100px;
+        height: 50px;
+        background-color: #4caf50; /* verde */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      /* Labels para mostrar distâncias */
+      .label-top {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .label-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      .label-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .label-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      .section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 200px;
+      }
+
+      .section .back {
+        color: red;
+        text-decoration: none;
+      }
+
+      .section a {
+        color: blue;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">BOX</div>
+      <span class="label-top">top</span>
+      <span class="label-right">right</span>
+      <span class="label-bottom">bottom</span>
+      <span class="label-left">left</span>
+    </div>
+
+    <section class="section">
+      <a href="../projeto-02/" class="back">Voltar</a>
+      <a href="../projeto-01/" class="back">Voltar para projeto-01</a>
+      <a href="../projeto-04/">Ir para projeto-04</a>
+    </section>
+  </body>
+</html>

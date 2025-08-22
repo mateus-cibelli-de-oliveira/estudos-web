@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Elementos Escaláveis</title>
+    <style>
+      html {
+        font-size: 16px; /* 1rem = 16px */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 4vw; /* escalável com largura da tela */
+        margin-bottom: 1rem;
+        color: #2c3e50;
+      }
+
+      p {
+        font-size: 1.2rem; /* escalável com root font-size */
+        margin-bottom: 2vh; /* espaçamento escalável com altura da tela */
+      }
+
+      .container {
+        width: 80%; /* escalável com largura do pai/body */
+        max-width: 800px;
+        background-color: #ecf0f1;
+        padding: 2rem; /* escalável com rem */
+        margin: 0 auto 2rem auto;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .box {
+        width: 50%; /* escalável com container */
+        height: 20vh; /* escalável com altura da tela */
+        background-color: #3498db;
+        margin: 1rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem; /* escalável com root font-size */
+        border-radius: 8px;
+      }
+
+      .section {
+        width: 100%; /* ocupa toda a largura */
+        height: auto; /* cresce com o conteúdo */
+        padding-top: 1rem; /* escalável com o font-size base */
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* centraliza horizontal */
+        align-items: center; /* centraliza vertical */
+        gap: 1rem; /* espaço entre links escalável */
+      }
+
+      .section .back {
+        color: red;
+        text-decoration: none;
+      }
+
+      .section a {
+        color: blue;
+        margin-right: 10px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Título Escalável</h1>
+
+    <div class="container">
+      <p>
+        Este parágrafo é escalável usando <code>rem</code> e
+        <code>vh</code> para margem.
+      </p>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+
+    <p>
+      Redimensione a janela para ver os elementos se ajustarem automaticamente.
+    </p>
+
+    <section class="section">
+      <a href="../projeto-02/" class="back">Voltar</a>
+      <a href="../projeto-01/" class="back">Voltar para projeto-01</a>
+      <a href="../projeto-05/">Ir para projeto-05</a>
+    </section>
+  </body>
+</html>
