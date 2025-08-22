@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "scripts": {
+    "start": "http-server . -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint '**/*.js' '**/*.jsx'",
     "lint:fix": "eslint '**/*.js' '**/*.jsx' --fix",
@@ -17,6 +18,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
+    "http-server": "^14.1.1",
     "prettier": "^3.6.2"
   }
 }

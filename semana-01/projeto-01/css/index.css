@@ -1,0 +1,125 @@
+body {
+  font-family: 'Arial', sans-serif;  /* Fonte legível e segura */
+  font-size: 16px;  /* Tamanho base */
+  line-height: 1.5;  /* Espaçamento entre linhas */
+
+  color: #333;        
+  margin: 0;  /* Remove margens padrão do navegador */
+  padding: 0;  /* Remove padding padrão */
+
+  box-sizing: border-box;  /* Inclui padding e border na largura/altura */
+  min-height: 100vh;  /* Garante que o body ocupe a altura da tela */
+  overflow-x: hidden;  /* Evita scroll horizontal indesejado */
+
+  -webkit-font-smoothing: antialiased;  /* Suaviza fontes em Mac */
+  -moz-osx-font-smoothing: grayscale;  /* Suaviza fontes no Firefox Mac */
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-titulo {
+  display: flex;  /* ativa flexbox */
+  align-items: center;  /* centraliza verticalmente a logo e o texto */
+  gap: 10px;  
+}
+
+.logo-titulo img {
+  height: 55px;  /* ajusta o tamanho da logo */
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  background-color: blue;
+  padding: 2rem;
+}
+
+.section-inicio {
+  background-color: blueviolet;
+  padding: 1rem 0;
+  height: 200px;  /* altura da seção */
+  max-height: 800px;  /* limite de altura */
+  overflow: auto;  /* cria a barra de rolagem se ultrapassar o limite de altura */
+  display: flex;  /* ativa o flexbox */
+  flex-direction: column;  /* organiza elementos em coluna */
+  justify-content: center;  /* centraliza verticalmente */
+  align-items: flex-start;  /* mantém alinhamento à esquerda */
+  padding-left: 20px;  /* opcional: distancia do lado esquerdo */
+  /* align-items: flex-end;  direita */
+  /* align-items: center;  centralizado */
+  /* align-items: stretch;  esticado */
+  /* align-items: baseline;  alinhado pela linha do texto */
+}
+
+.section-sobre {
+  background-color: aqua;
+  padding: 1rem 0;
+  height: auto;  /* altura automática */
+  max-height: 800px;  /* limite de altura */
+  overflow: auto;  /* cria a barra de rolagem se ultrapassar o limite de altura */
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.article {
+  padding: 0.5rem 0;
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;  /* Header vertical */
+    align-items: flex-start;
+  }
+  
+  .nav-list {
+    flex-direction: column;  /* Nav vertical */
+    width: 100%;
+  }
+  
+  .nav-list li {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
